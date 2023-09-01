@@ -6,7 +6,7 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 import lombok.Data;
 
-@DynamoDBTable(tableName = "Product")
+@DynamoDBTable(tableName = "Product") // This must be the same as in DynamoDB
 @Data
 public class Product {
     @DynamoDBHashKey(attributeName = "id")
